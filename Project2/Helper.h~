@@ -1,0 +1,40 @@
+#include <string>
+#include <vector>
+#include "Token.h"
+//#include "Node.h"
+
+using namespace std;
+
+// structure to represent node
+struct node
+{
+  string value;
+  bool list;
+  node *left;
+  node *right;
+};
+
+// reads file input
+void readFile();
+
+// gets each token from the input file
+Token getNextToken();
+
+// initializes current token
+void Init();
+
+// Returns current token
+Token GetCurrent();
+
+// moves current token to next token
+void MoveToNext();
+
+
+// calls ParseExpr and Print until eof token
+void ParseStart();
+
+// creates tree from token objects
+node *ParseExpr();
+
+// prints out tree
+void Print(node *root);

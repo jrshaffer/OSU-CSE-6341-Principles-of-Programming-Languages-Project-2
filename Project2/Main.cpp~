@@ -1,0 +1,31 @@
+// Joseph Shaffer
+// Shaffer.567
+// CSE 6341 Autumn 2017
+
+#include <iostream>
+#include <string>
+#include <stdlib.h>
+#include <sstream>
+#include "Token.h"
+#include "Helper.h"
+
+
+using namespace std;
+
+
+
+// main class
+int main(int argc, char *argv[]) {
+
+	readFile();
+	Init();
+	ParseStart();
+	 
+	return 0;
+}
+
+
+
+
+			
+	
